@@ -3,14 +3,7 @@ package projeto;
 public class Laboratorio {
     private String descricao;
     private int capacidade;
-    
-    void View(){
-        System.out.println("Informações sobre o Laboratório...      ");
-        System.out.println("Descrição do laboratório:  " + this.descricao);
-        System.out.println("Capacidade do Laboratório:  " + this.capacidade);
-        
-    }
-    
+  
     public Laboratorio(){
         this.descricao = "Laboratorio dos Cursos de Graduação ";
         this.capacidade = 15;
@@ -37,5 +30,9 @@ public class Laboratorio {
         this.capacidade = capacidade;
     }
     
+     @Override
+    public String toString() {
+        return ("\n" + "INFORMAÇÕES DO LABORATÓRIO..."+ "\n" + "Descrição: " + descricao + "\n" + "Capacidade do Laboratório:" + capacidade );
+    }
      
 }
