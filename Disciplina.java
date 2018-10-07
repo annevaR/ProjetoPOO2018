@@ -7,16 +7,7 @@ public class Disciplina {
     private int quantCredito;
 
    
-    void View(){
-        System.out.println("Informações sobre a Disciplina...   ");
-        System.out.println("Descrição da Disciplina:  " + this.descricao + "// ");
-        System.out.println("Sigla:  " + this.sigla + "// ");
-        System.out.println("Período:  " + this.periodo + "// ");
-        System.out.println("Quantidade de Crédito:  " + this.quantCredito + "// ");
-       
-    }
-    
-    public Disciplina(){
+  public Disciplina(){
         this.descricao = "-Descrição-null-";
         this.sigla = "-Sigla-null-";
         this.periodo = 0 ;
@@ -64,6 +55,11 @@ public class Disciplina {
 
         public void setQuantCredito(int quantCredito) {
         this.quantCredito = quantCredito;
+    }
+    
+    @Override
+    public String toString() {
+        return ("\n" + "INFORMAÇÕES DA DISCIPLINA..." + "\n" + "Descrição: " + descricao + "\n" + "Sigla: " + sigla + "\n" + "Período: " + periodo + "\n" + "Quantidade de Crédito: " + quantCredito);
     }
     
     
