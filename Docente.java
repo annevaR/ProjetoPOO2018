@@ -7,20 +7,9 @@ public class Docente {
    public long matricula;     
    private String areaLotacao;
    public String vinculo;
+  
    
-    
-   void View(){
-       System.out.println("Informações sobre o Docente...    ");
-       System.out.println("Nome do Docente: " + this.nome + " //");
-       System.out.println("Apelido do Docente: " + this.apelido + " //");
-       System.out.println("Email do Docente: " + this.email + " //");
-       System.out.println("Matrícula do Docente: " + this.matricula + " //");
-       System.out.println("Àrea de Lotação: " + this.areaLotacao + " //");
-       System.out.println( "Vínculo: " + this.vinculo);
-   }
-   
-   
-    public Docente(){
+   public Docente(){
         this.nome = "null";
         this.apelido = "null";
         this.email = "null";
@@ -84,6 +73,11 @@ public class Docente {
 
     public void setVinculo(String vinculo) {
         this.vinculo = vinculo;
+    }
+   
+   @Override
+    public String toString() {
+        return ("\n" + "INFORMAÇÕES DO DOCENTE..." + "\n" + "Nome do Docente: " + nome + "\n" + "Apelido do Docente: " + apelido + "\n" + "E-mail do Docente: " + email + "\n" +"Matrícula: " + matricula + "\n" +"Àrea de Lotação: " + areaLotacao + "\n" +" Vínculo do Docente: " + vinculo );
     }
     
             
