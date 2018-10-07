@@ -3,12 +3,7 @@ package projeto;
 public class Usuario {
      private String apelido;
      private int senha;
-     
-     void View(){
-        System.out.print("Informações do Usuário...");                                                                            
-        System.out.print("O apelido é:  " + this.apelido + " /");
-        System.out.print("/ " + "A nova senha é: " + this.senha);
-         }
+  
      public  Usuario(){
        this.apelido = "null";
         this.senha = 98;
@@ -36,7 +31,10 @@ public class Usuario {
          this.senha = senha;
      
      }
-     
+      @Override
+    public String toString() {
+        return ( "INFORMAÇÕES DO USUÁRIO...  " + "\n" + "O apelido do Usuário é " + this.apelido + "\n"  + " A senha do Usuário é " + this.senha);
+    }
 
      
 }

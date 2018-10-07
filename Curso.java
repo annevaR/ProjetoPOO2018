@@ -5,13 +5,7 @@ public class Curso {
     private long codigo;
     private int duracao;
     
-    void View(){
-        System.out.println("       Informações sobre o Curso...");
-        System.out.println("Descrição do Curso: " + this.descricao + " /");
-        System.out.println("/ " + "Código do Curso: "  + this.codigo + " /");
-        System.out.println("/ " + "Duração(em horas semanais): " + this.duracao + " /");
-    }
-    
+      
     public Curso(){
         this.descricao = "Curso de Graduação";
         this.codigo = 000;
@@ -51,5 +45,10 @@ public class Curso {
     
     public void setDuracao(int duracao ){
         this.duracao = duracao;
+    }
+    
+    @Override
+    public String toString() {
+        return ("\n" + "INFORMAÇÕES DO CURSO..." + "\n" + "Descrição:" + descricao + "\n" + " O código do Curso: " + codigo + "\n" + " A Duração do Curso: " + duracao);
     }
 }
