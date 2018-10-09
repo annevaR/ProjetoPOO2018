@@ -2,7 +2,9 @@ package projeto;
 
 public class GradeDeHorarios {
      private Horario[] horario;
-     String [][] grade = new String[7][6];
+     int i;
+
+     String [][] grade = new String[7][7];
      {
         grade[0][0] = "Grade De Horários";
         grade[0][1] = "segunda-feira";
@@ -17,10 +19,16 @@ public class GradeDeHorarios {
         grade[4][0] = "4º Horário";
         grade[5][0] = "5º Horário";
         grade[6][0] = "6º Horário";
-    };
+        
+         for (i = 0; i< grade.length; i++) {
+             for (int d = 0; d<grade.length; d++) {
+                 System.out.println(grade[i][d] + " ");
+             }
+         }
+     };
 
-    @Override
-    public String toString() {
+   @Override
+   public String toString() {
         return ("\n" + "GRADE DE HORÁRIOS" + "\n" + this.grade);
     }
      
