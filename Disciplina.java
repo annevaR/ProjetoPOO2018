@@ -1,13 +1,16 @@
 package projeto;
 
 public class Disciplina {
-    public String descricao;
+    private String nomeDisciplina;
+    private String descricao;
     private String sigla;
-    public double periodo; 
+    private double periodo; 
     private int quantCredito;
 
    
-  public Disciplina(){
+    
+    public Disciplina(){
+        this.nomeDisciplina = "not found";
         this.descricao = "-Descrição-null-";
         this.sigla = "-Sigla-null-";
         this.periodo = 0 ;
@@ -16,14 +19,22 @@ public class Disciplina {
     }
 
     
-    public Disciplina(String descricao, String sigla, double periodo, int quantCredito){
+    public Disciplina(String nomeDisciplina, String descricao, String sigla, double periodo, int quantCredito){
+        this.nomeDisciplina = nomeDisciplina;
         this.descricao = descricao;
         this.sigla = sigla;
         this.periodo = periodo;
         this.quantCredito = quantCredito;
                 
         }
-
+ 
+    public String getNomeDisciplina(){
+        return this.nomeDisciplina;
+            }
+    public void setNomeDisciplina(String nomeDisciplina){
+        this.nomeDisciplina = nomeDisciplina;
+    }
+    
     public String getDescricao() {
         return this.descricao;
     }
@@ -53,14 +64,16 @@ public class Disciplina {
         return this.quantCredito;
     }
 
-        public void setQuantCredito(int quantCredito) {
+    public void setQuantCredito(int quantCredito) {
         this.quantCredito = quantCredito;
     }
-    
+
     @Override
     public String toString() {
-        return ("\n" + "INFORMAÇÕES DA DISCIPLINA..." + "\n" + "Descrição: " + descricao + "\n" + "Sigla: " + sigla + "\n" + "Período: " + periodo + "\n" + "Quantidade de Crédito: " + quantCredito);
+        return ("\n" + "INFORMAÇÕES DA DISCIPLINA..." + "\n" + "Nome da Disciplina:" + this.nomeDisciplina + "\n" +"Descrição: " + descricao + "\n" + "Sigla: " + sigla + "\n" + "Período: " + periodo + "\n" + "Quantidade de Crédito: " + quantCredito);
     }
+   
     
+        
     
 }

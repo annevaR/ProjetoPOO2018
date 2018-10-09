@@ -7,9 +7,9 @@ public class Docente {
    public long matricula;     
    private String areaLotacao;
    public String vinculo;
-  
    
-   public Docente(){
+   
+    public Docente(){
         this.nome = "null";
         this.apelido = "null";
         this.email = "null";
@@ -74,11 +74,12 @@ public class Docente {
     public void setVinculo(String vinculo) {
         this.vinculo = vinculo;
     }
-   
-   @Override
+
+    @Override
     public String toString() {
         return ("\n" + "INFORMAÇÕES DO DOCENTE..." + "\n" + "Nome do Docente: " + nome + "\n" + "Apelido do Docente: " + apelido + "\n" + "E-mail do Docente: " + email + "\n" +"Matrícula: " + matricula + "\n" +"Àrea de Lotação: " + areaLotacao + "\n" +" Vínculo do Docente: " + vinculo );
     }
+    
     
             
 }
