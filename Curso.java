@@ -1,12 +1,14 @@
 package projeto;
 
+import java.util.ArrayList;
+
 public class Curso {
     private String descricao;
     private long codigo;
     private int duracao;
-    private Docente[] docente;
-    private Disciplina[] disciplina;
-    private Turma[] turma;
+    private ArrayList<Docente> docentes;
+    private ArrayList<Disciplina> disciplinas;
+    private ArrayList<Turma> turmas;
 
        
     public Curso(){
@@ -15,15 +17,18 @@ public class Curso {
         this.duracao = 40;
         
     }
-    
-    public Curso(String descricao, long codigo, int duracao, Docente[] docente, Disciplina[] disciplina, Turma[] turma){
+
+    public Curso(String descricao, long codigo, int duracao) {
         this.descricao = descricao;
         this.codigo = codigo;
         this.duracao = duracao;
-        this.docente = docente;
-        this.disciplina = disciplina;
-        this.turma = turma;
-    } 
+        this.docentes = new ArrayList<Docente>();
+        this.disciplinas = new ArrayList<Disciplina>();
+        this.turmas = new ArrayList<Turma>() ;
+        
+    }
+    
+    
     
     public String getDescricao(){
         return this.descricao;
@@ -53,35 +58,58 @@ public class Curso {
         this.duracao = duracao;
     }
 
-    public Docente[] getDocente() {
-        return this.docente;
+    public ArrayList<Docente> getDocentes() {
+        return this.docentes;
     }
 
-    public void setDocente(Docente[] docente) {
-        this.docente = docente;
+    public void setDocentes(ArrayList<Docente> docentes) {
+        this.docentes = docentes;
     }
 
-    public Disciplina[] getDisciplina() {
-        return this.disciplina;
+    public ArrayList<Disciplina> getDisciplinas() {
+        return this.disciplinas;
     }
 
-    public void setDisciplina(Disciplina[] disciplina) {
-        this.disciplina = disciplina;
+    public void setDisciplinas(ArrayList<Disciplina> disciplinas) {
+        this.disciplinas = disciplinas;
     }
 
-    public Turma[] getTurma() {
-        return this.turma;
+    public ArrayList<Turma> getTurmas() {
+        return this.turmas;
     }
 
-    public void setTurma(Turma[] turma) {
-        this.turma = turma;
+    public void setTurmas(ArrayList<Turma> turmas) {
+        this.turmas = turmas;
+    }
+
+    public void addDocente(Docente e) {
+        this.docentes.add(e);
+    }
+
+    public void removeDocente(int i) {
+        this.docentes.remove(i);
     }
     
     
+    public void addDisciplina(Disciplina e) {
+        this.disciplinas.add(e);
+    }
 
+    public void removeDisciplina(int i) {
+        this.disciplinas.remove(i);
+    }
+
+    public void addTurma(Turma e) {
+        this.turmas.add(e);
+    }
+
+    public void removeTurma(int i) {
+        this.turmas.remove(i);
+    }
+    
     @Override
     public String toString() {
-        return ("\n" + "INFORMAÇÕES DO CURSO..." + "\n" + "Descrição:" + descricao + "\n" + " O código do Curso: " + codigo + "\n" + " A Duração do Curso: " + duracao + "\n" + "Docentes associados: " + this.docente + "\n" + "Disciplinas associadas: " + this.disciplina + "\n" + "Turmas associadas: " + this.turma);
+        return ("\n" + "INFORMAÇÕES DO CURSO..." + "\n" + "Descrição:" + descricao + "\n" + " O código do Curso: " + codigo + "\n" + " A Duração do Curso: " + duracao + "\n" + "Docentes associados: " + this.docentes + "\n" + "Disciplinas associadas: " + this.disciplinas + "\n" + "Turmas associadas: " + this.turmas);
     }
     
     
