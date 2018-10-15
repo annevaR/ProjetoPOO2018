@@ -50,8 +50,8 @@ public class Projeto {
       Horario H = new Horario();
       System.out.println(H.toString());
       
-      GradeDeHorarios g1 = new GradeDeHorarios();
-      System.out.println(g1.toString());
+      GradeDeHorarios G = new GradeDeHorarios();
+      System.out.println(G.toString());
     }
     
    
