@@ -1,17 +1,12 @@
 package projeto;
 
-import java.util.ArrayList;
-
 public class GradeDeHorarios {
-     private ArrayList<Horario> horarios;
+     private String[][] grade;
      int i;
 
     public GradeDeHorarios() {
-        this.horarios = new ArrayList<Horario>();
-    }
-  
-     String [][] grade = new String[6][5];
-     {
+        this.grade = new String[6][5]; {
+        
         grade[0][0] = " ";
         grade[0][1] = " ";
         grade[0][2]= " ";
@@ -54,47 +49,25 @@ public class GradeDeHorarios {
         grade[5][4] = " ";
         
         
-        for (i = 0; i< grade.length; i++) {
-             for (int d = 0; d<grade.length; d++) {
-                 System.out.println(grade[i][d] + " ");
-             }
-         }
-     };
-
-    public ArrayList<Horario> getHorarios() {
-        return this.horarios;
+            for (i = 0; i< grade.length; i++) {
+                for (int d = 0; d<grade.length; d++) {
+                    System.out.println(grade[i][d] + " ");
+                }
+            }
+        }
     }
 
-    public void setHorarios(ArrayList<Horario> horarios) {
-        this.horarios = horarios;
+    public String[][] getGrade() {
+        return this.grade;
     }
 
-    public int getI() {
-        return i;
-    }
+    public void setGrade(String[][] grade) {
+        this.grade = grade;
+    }         
 
-    public void setI(int i) {
-        this.i = i;
-    }
-     
-    public void addHorario(Horario h){
-        this.horarios.add(h);
-    };     
-    
-    public void removeHorario(int i) {
-        this.horarios.remove(i);
-    };
-    
-
-  
-   @Override
-   public String toString() {
+    @Override
+    public String toString() {
         return ("\n" + "GRADE DE HORÁRIOS" + "\n" + this.grade);
     }
-     
-     
-     
-       
-    
-    
+
 }
