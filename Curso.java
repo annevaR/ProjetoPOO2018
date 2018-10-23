@@ -82,29 +82,29 @@ public class Curso {
         this.turmas = turmas;
     }
 
-    public void addDocente(Docente e) {
-        this.docentes.add(e);
+    public void addDocente(Docente d) {
+        this.docentes.add(d);
     }
 
-    public void removeDocente(int i) {
-        this.docentes.remove(i);
+    public void removeDocente(int d) {
+        this.docentes.remove(d);
     }
     
     
-    public void addDisciplina(Disciplina e) {
-        this.disciplinas.add(e);
+    public void addDisciplina(Disciplina disc) {
+        this.disciplinas.add(disc);
     }
 
-    public void removeDisciplina(int i) {
-        this.disciplinas.remove(i);
+    public void removeDisciplina(int disc) {
+        this.disciplinas.remove(disc);
     }
 
-    public void addTurma(Turma e) {
-        this.turmas.add(e);
+    public void addTurma(Turma t) {
+        this.turmas.add(t);
     }
 
-    public void removeTurma(int i) {
-        this.turmas.remove(i);
+    public void removeTurma(int t) {
+        this.turmas.remove(t);
     }
     
     @Override
