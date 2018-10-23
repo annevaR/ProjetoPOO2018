@@ -1,9 +1,5 @@
 package projeto;
 
-/**
- *
- * @author Jose
- */
 public class Projeto {
 
     /**
@@ -50,8 +46,7 @@ public class Projeto {
       Horario H = new Horario();
       System.out.println(H.toString());
       
-      GradeDeHorarios G = new GradeDeHorarios();
-      System.out.println(G.toString());
+
     }
     
    

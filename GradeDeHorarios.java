@@ -1,8 +1,12 @@
 package projeto;
 
+import java.util.ArrayList;
+
 public class GradeDeHorarios {
      private String[][] grade;
+     ArrayList<ArrayList<Horario>> matrizHorario;
      int i;
+
 
     public GradeDeHorarios() {
         this.grade = new String[6][5]; {
@@ -57,6 +61,14 @@ public class GradeDeHorarios {
         }
     }
 
+    public void addHorario(ArrayList<Horario> i) {
+        this.matrizHorario.add(i);
+    }
+
+    public ArrayList<Horario> remove(int i) {
+        return matrizHorario.remove(i);
+    }
+    
     public String[][] getGrade() {
         return this.grade;
     }
@@ -65,9 +77,14 @@ public class GradeDeHorarios {
         this.grade = grade;
     }         
 
-    @Override
-    public String toString() {
-        return ("\n" + "GRADE DE HORÁRIOS" + "\n" + this.grade);
+    public ArrayList<ArrayList<Horario>> getMatrizHorario() {
+        return matrizHorario;
     }
+
+    public void setMatrizHorario(ArrayList<ArrayList<Horario>> matrizHorario) {
+        this.matrizHorario = matrizHorario;
+    }
+
+    
 
 }
