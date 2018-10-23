@@ -2,8 +2,7 @@ package projeto;
 
 public class Turma {
     private String IDENT;
-    private double anoOferta;
-    private GradeDeHorarios[] gradeDeHorarios;  
+    private double anoOferta; 
     int count;
            
     public Turma(){
@@ -14,10 +13,9 @@ public class Turma {
     public Turma(String IDENT, double anoOferta) {
         this.IDENT = IDENT;
         this.anoOferta = anoOferta;
-        this.gradeDeHorarios = new GradeDeHorarios[1];
-    
     }
-     public void addGrade(GradeDeHorarios gradeDeHorarios){
+    
+    GradeDeHorarios[] gradeDeHorarios = new GradeDeHorarios[1]; {
         for (count = 0; count < gradeDeHorarios.length; count ++){
                 System.out.println(gradeDeHorarios[count]);
             } 
@@ -39,13 +37,14 @@ public class Turma {
         this.anoOferta = anoOferta;
     }
 
-    public GradeDeHorarios[] getGradeDeHorarios() {
+  
+     public GradeDeHorarios[] getGradeDeHorarios() {
         return this.gradeDeHorarios;
     }
 
     public void setGradeDeHorarios(GradeDeHorarios[] gradeDeHorarios) {
         this.gradeDeHorarios = gradeDeHorarios;
-    }
+    }         
 
     
     @Override
@@ -54,9 +53,3 @@ public class Turma {
     }
     
 }
-    
-    
-    
-   
-    
-    
