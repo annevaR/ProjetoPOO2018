@@ -36,10 +36,4 @@ public class Usuario {
     public String toString() {
         return ( "INFORMAÇÕES DO USUÁRIO...  " + "\n" + "O apelido do Usuário é " + this.apelido + "\n"  + " A senha do Usuário é " + this.senha);
     }
-     
-     
-     
-
-     
 }
-        

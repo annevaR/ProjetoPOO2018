@@ -79,7 +79,4 @@ public class Docente {
     public String toString() {
         return ("\n" + "INFORMAÇÕES DO DOCENTE..." + "\n" + "Nome do Docente: " + nome + "\n" + "Apelido do Docente: " + apelido + "\n" + "E-mail do Docente: " + email + "\n" +"Matrícula: " + matricula + "\n" +"Àrea de Lotação: " + areaLotacao + "\n" +" Vínculo do Docente: " + vinculo );
     }
-    
-    
-            
 }
