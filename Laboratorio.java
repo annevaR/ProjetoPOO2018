@@ -34,6 +34,4 @@ public class Laboratorio {
     public String toString() {
         return ("\n" + "INFORMAÇÕES DO LABORATÓRIO..."+ "\n" + "Descrição: " + descricao + "\n" + "Capacidade do Laboratório:" + capacidade );
     }
-    
-     
 }

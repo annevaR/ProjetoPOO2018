@@ -72,8 +72,4 @@ public class Disciplina {
     public String toString() {
         return ("\n" + "INFORMAÇÕES DA DISCIPLINA..." + "\n" + "Nome da Disciplina:" + this.nomeDisciplina + "\n" +"Descrição: " + descricao + "\n" + "Sigla: " + sigla + "\n" + "Período: " + periodo + "\n" + "Quantidade de Crédito: " + quantCredito);
     }
-   
-    
-        
-    
 }

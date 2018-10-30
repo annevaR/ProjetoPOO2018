@@ -57,9 +57,4 @@ public class Horario  {
     public String toString() {
         return ("\n" + "HORÁRIO..." + "\n" +"Disciplina: " + this.disciplina + "\n" +"Professor: " + this.professor + "\n" + "Laboratório: " + this.laboratorio + "\n" + "Aula " + this.aula);
     }
-    
-    
-  
-  
-    
 }
