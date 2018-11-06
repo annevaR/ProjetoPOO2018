@@ -8,6 +8,7 @@ public class Curso {
     private int duracao;
     private ArrayList<Docente> docentes;
     private ArrayList<Disciplina> disciplinas;
+    private ArrayList<Laboratorio> laboratorios;
     private ArrayList<Turma> turmas;
 
        
@@ -24,6 +25,7 @@ public class Curso {
         this.duracao = duracao;
         this.docentes = new ArrayList<Docente>();
         this.disciplinas = new ArrayList<Disciplina>();
+        this.laboratorios = new ArrayList<Laboratorio>();
         this.turmas = new ArrayList<Turma>() ;
         
     }
@@ -74,6 +76,15 @@ public class Curso {
         this.disciplinas = disciplinas;
     }
 
+    public ArrayList<Laboratorio> getLaboratorios() {
+        return this.laboratorios;
+    }
+
+    public void setLaboratorios(ArrayList<Laboratorio> laboratorios) {
+        this.laboratorios = laboratorios;
+    }
+
+    
     public ArrayList<Turma> getTurmas() {
         return this.turmas;
     }
@@ -86,8 +97,8 @@ public class Curso {
         this.docentes.add(d);
     }
 
-    public void removeDocente(int d) {
-        this.docentes.remove(d);
+    public void removeDocente(int i) {
+        this.docentes.remove(i);
     }
     
     
@@ -95,10 +106,19 @@ public class Curso {
         this.disciplinas.add(disc);
     }
 
-    public void removeDisciplina(int disc) {
-        this.disciplinas.remove(disc);
+    public void removeDisciplina(int i) {
+        this.disciplinas.remove(i);
     }
 
+    public void addLaboratorio(Laboratorio l) {
+        this.laboratorios.add(l);
+    }
+
+    public void remove(int i) {
+        this.laboratorios.remove(i);
+    }
+
+    
     public void addTurma(Turma t) {
         this.turmas.add(t);
     }
