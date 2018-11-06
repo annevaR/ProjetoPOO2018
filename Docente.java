@@ -4,21 +4,21 @@ public class Docente {
    public String nome;
    private String apelido;
    private String email;
-   public long matricula;     
+   public String matricula;     
    private String areaLotacao;
    public String vinculo;
    
    
     public Docente(){
-        this.nome = "null";
-        this.apelido = "null";
-        this.email = "null";
-        this.matricula = 000;
-        this.areaLotacao = "null";
-        this.vinculo = "null";
+        this.nome = null;
+        this.apelido = null;
+        this.email = null;
+        this.matricula = null;
+        this.areaLotacao = null;
+        this.vinculo = null;
     }
 
-    public Docente(String nome, String apelido, String email, long matricula, String areaLotacao, String vinculo) {
+    public Docente(String nome, String apelido, String email, String matricula, String areaLotacao, String vinculo) {
         this.nome = nome;
         this.apelido = apelido;
         this.email = email;
@@ -51,11 +51,11 @@ public class Docente {
         this.email = email;
     }
 
-    public long getMatricula() {
+    public String getMatricula() {
         return this.matricula;
     }
 
-    public void setMatricula(long matricula) {
+    public void setMatricula(String matricula) {
         this.matricula = matricula;
     }
 

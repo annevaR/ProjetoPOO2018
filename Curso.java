@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class Curso {
     private String descricao;
-    private long codigo;
+    private String codigo;
     private int duracao;
     private ArrayList<Docente> docentes;
     private ArrayList<Disciplina> disciplinas;
@@ -13,12 +13,12 @@ public class Curso {
        
     public Curso(){
         this.descricao = "Curso de Graduação";
-        this.codigo = 000;
-        this.duracao = 40;
+        this.codigo = "0000000";
+        this.duracao = 00;
         
     }
 
-    public Curso(String descricao, long codigo, int duracao) {
+    public Curso(String descricao, String codigo, int duracao) {
         this.descricao = descricao;
         this.codigo = codigo;
         this.duracao = duracao;
@@ -40,12 +40,12 @@ public class Curso {
         
     }
     
-     public long getCodigo(){
+     public String getCodigo(){
         return this.codigo;
     
     }
     
-    public void setCodigo(long codigo ){
+    public void setCodigo(String codigo ){
         this.codigo = codigo ;
     }
     

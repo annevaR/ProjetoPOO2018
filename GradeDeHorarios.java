@@ -24,13 +24,7 @@ public class GradeDeHorarios {
             
          return print;
     }
-     
-        
-        
-           
-       
-    
-    
+  
     public void addHorario(int dia, Horario h){
          this.gradeDeHorarios[h.getAula()][dia] = h;
     
