@@ -5,8 +5,8 @@ public class Laboratorio {
     private int capacidade;
    
     public Laboratorio(){
-        this.descricao = "Laboratorio dos Cursos de Graduação ";
-        this.capacidade = 15;
+        this.descricao = null;
+        this.capacidade = 0;
     }
     
     public Laboratorio(String descricao, int capacidade){

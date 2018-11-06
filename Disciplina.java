@@ -4,7 +4,7 @@ public class Disciplina {
     private String nomeDisciplina;
     private String descricao;
     private String sigla;
-    private double periodo; 
+    private int periodo; 
     private int quantCredito;
 
    
@@ -19,7 +19,7 @@ public class Disciplina {
     }
 
     
-    public Disciplina(String nomeDisciplina, String descricao, String sigla, double periodo, int quantCredito){
+    public Disciplina(String nomeDisciplina, String descricao, String sigla, int periodo, int quantCredito){
         this.nomeDisciplina = nomeDisciplina;
         this.descricao = descricao;
         this.sigla = sigla;
@@ -52,11 +52,11 @@ public class Disciplina {
     }
 
     
-    public double getPeriodo() {
+    public int getPeriodo() {
         return this.periodo;
     }
 
-    public void setPeriodo(double periodo) {
+    public void setPeriodo(int periodo) {
         this.periodo = periodo;
     }
 
