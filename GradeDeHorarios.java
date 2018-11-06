@@ -1,8 +1,20 @@
 package projeto;
 
 public class GradeDeHorarios {
+    private String nomeGrade;
+    private String [] diaSemana = {"Segunda-Feira", "Terça-Feira", "Quarta-Feira", "Quinta-Feira", "Sexta-Feira"};;
+    private
     int l;
     int c;
+
+    public String getNomeGrade() {
+        return nomeGrade;
+    }
+
+    public void setNomeGrade(String nomeGrade) {
+        this.nomeGrade = nomeGrade;
+    }
+    
     
     Horario[][] gradeDeHorarios = new Horario[6][5]; {
     
@@ -10,7 +22,6 @@ public class GradeDeHorarios {
     
     @Override
     public String toString(){
-        String [] diaSemana = {"Segunda-Feira", "Terça-Feira", "Quarta-Feira", "Quinta-Feira", "Sexta-Feira"};
         String print = "";
         
         for (c = 0; c < 5 ; c++) {

@@ -1,25 +1,25 @@
 package projeto;
 
 public class Laboratorio {
-    private String descricao;
+    private String descricaoLaboratorio;
     private int capacidade;
    
     public Laboratorio(){
-        this.descricao = null;
-        this.capacidade = 0;
+        this.descricaoLaboratorio = "Laboratorio dos Cursos de Graduação ";
+        this.capacidade = 15;
     }
     
-    public Laboratorio(String descricao, int capacidade){
-        this.descricao = descricao;
+    public Laboratorio(String descricaoLaboratorio, int capacidade){
+        this.descricaoLaboratorio = descricaoLaboratorio;
         this.capacidade = capacidade;
     }
 
-    public String getDescricao() {
-        return this.descricao;
+    public String getDescricaoLaboratorio() {
+        return this.descricaoLaboratorio;
     }
 
-    public void setDescricao(String descricao) {
-        this.descricao = descricao;
+    public void setDescricaoLaboratorio(String descricaoLaboratorio) {
+        this.descricaoLaboratorio = descricaoLaboratorio;
     }
 
     public int getCapacidade() {
@@ -32,6 +32,6 @@ public class Laboratorio {
 
     @Override
     public String toString() {
-        return ("\n" + "INFORMAÇÕES DO LABORATÓRIO..."+ "\n" + "Descrição: " + descricao + "\n" + "Capacidade do Laboratório:" + capacidade );
+        return ("\n" + "INFORMAÇÕES DO LABORATÓRIO..."+ "\n" + "Descrição : " + descricaoLaboratorio + "\n" + "Capacidade do Laboratório:" + capacidade );
     }
 }
